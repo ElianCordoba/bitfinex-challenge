@@ -1,0 +1,20 @@
+{
+  "name": "grenache-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "deno fmt --line-width 300 --ignore=node_modules,dist,other",
+    "build-watch": "tsc --watch",
+    "s1": "node dist/index.js server_1 'http://127.0.0.1:30001' 3001",
+    "s2": "node dist/index.js server_2 'http://127.0.0.1:40001' 3002",
+    "s3": "node dist/index.js server_3 'http://127.0.0.1:40001' 3003"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.14.6",
+    "grenache-nodejs-http": "^0.7.12",
+    "grenache-nodejs-link": "^0.7.12"
+  }
+}
